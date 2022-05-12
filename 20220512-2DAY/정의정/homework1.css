@@ -1,0 +1,23 @@
+body > header {
+    margin: 0;
+    background: #333;
+    color: #EEE;
+  }
+
+  /* img{
+      float: left;
+      margin-right: 50px;
+  } */
+
+  form {
+    background-color: lightgrey;
+    padding: 30px; /* 배경속성 */
+    width: 700px;
+    
+}
+
+footer {
+    padding-top: 50px;
+    margin:0 auto; 
+    text-align:center;
+}
