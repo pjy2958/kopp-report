@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <!-- 헤더부분 -->
+    <div id=header>
+        <h1>이&emsp;력&emsp;서</h1>
+    </header>
+        <div id="wrapper">
+            <!-- 링크를 통한 이미지 넣기 -->
+            <div id="picture">
+                <img src="https://pbs.twimg.com/media/FR-c9T0UUAAqu7U?format=jpg&name=large">
+            </div>
+            <!-- 필요한 항목들을 content안에 div태그로 묶어넣음 -->
+            <div id="content">
+                <!-- 이름 -->
+                <div>
+                    <h3>
+                        <!-- label을 통해 이름을 누르면 이름을 입력할 수 있는 창에 포커스가 가도록 설정  -->
+                        <label for="name">이름</label>
+                    </h3>
+                    <span class="box int_name">
+                        <!-- 텍스트를 입력 받고 고정값을 입력 -->
+                        <input type="text" id="name" class="int" maxlength="20" placeholder="동글이">
+                    </span>
+                <div>
+                <div>
+                    <h3><label for="birdate">생년월일</label></h3>
+                    <div id="bir">
+                        <!-- 날짜를 선택할 수 있도록 함 -->
+                        <input type="date" id="birdate" >
+                    </div>
+                </div>
+                <div>
+                    <h3>
+                        <label for="sex">성별</label>
+                    </h3>
+                    <span class="box int_sex">
+                        <input type="text" id="sex" class="int" maxlength="20" placeholder="남">
+                    </span>
+                </div>
+                <div>
+                    <h3>
+                        <label for="email">이메일</label>
+                    </h3>
+                    <span class="box int_email">
+                        <input type="text" id="email" class="int" maxlength="20" placeholder="12cjstk30@gmail.com">
+                    </span>
+                </div>
+                <br>
+            </div>
+            <!-- 입력받지 않고 기술되어 있는 부분은 content2로 div 태그를 통해 묶음-->
+            <div id="content2">
+                <div>
+                    <h3>
+                        <label for="edu">학력사항</label>
+                    </h3>
+                    <!-- 밑줄 추가 -->
+                    <hr align="center" width="400" style="border:double">
+                    <div class="box_int_edu">
+                        <!-- &emsp를 통해 띄어쓰기 해주기 -->
+                        2012 - 2014 &emsp;&emsp;&emsp; XX고등학교 졸업&emsp;<br>
+                        2015 - 2019 &emsp;&emsp;&emsp; oo대학교 졸업&emsp;&emsp; <br>
+                        2022  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; 광명융합기술교육원
+                    </div>
+                    <br>
+
+                    <h3>
+                        <label for="license">자격증</label>
+                    </h3>
+                    <hr align="center" width="400" style="border:double">
+                    <div class="box_int_license">
+                        2015 &emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;SQLD&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<br>
+                        2016 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;정보처리기사&emsp;&emsp;
+                    </div>
+                    <br>
+
+                    <h3>
+                        <label for="awards">수상내역</label>
+                    </h3>
+                    <hr align="center" width="400" style="border:double">
+                    <div class="box_int_awards">
+                        2016 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; ㅁㅁ 공모전 은상 <br>
+                        2017 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; △△ 공모전 동상 <br> 
+                        2018 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; ◇◇ 공모전 금상 <br>
+                        2019 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; ◎◎ 공모전 금상 <br>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <!-- 버튼 생성 -->
+        <div class="button_area">
+            <button type="button" id="btnarea">
+                <span>제출하기</span>
+            </button>
+        </div>
+
+
+
+</body>
+</html>
