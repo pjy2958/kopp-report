@@ -1,0 +1,64 @@
+h1 {
+    text-align: center;
+}
+
+.main{
+    margin: 100px;
+    /* margin-left: 700px;
+    margin-right: 800px; */
+    border: 7px solid black;
+    align-items: center;
+    padding: 50px;
+}
+/* 인적사항을 나타내는 칸 아래쪽 공간에 15px정도의 여백을 둠 */
+.personal_Info_Main{
+    margin-bottom: 15px;
+}
+
+/* 인적사항을 기재하는 input태그 아래쪽 공간에 14px정도의 여백을 둠 */
+.personal_Info_input{
+    width: 200px;
+    margin-bottom: 14px;
+
+}
+/* 인적사항에서 주소를 기재하는 input태그 넓이를 518px로 주어서 인적사항의 전체 input들과 크기를 맞춰줌 */
+.address_input{
+    width: 518px;
+    margin-bottom: 5px;
+}
+
+/* 학력사항의 정보들을 기재하는 input 태그 넒이를 200 px로 고정하고 맡에 여백을 5px정도 줌 */
+.educational_History_input{
+    width: 200px;
+    margin-bottom: 5px;
+}
+
+
+/* 학력사항에서 학교주소를 기재하는 input태그 넓이를 518px로 주어서 인적사항의 전체 input들과 크기를 맞춰줌 */
+.educational_address_input{
+    width: 518px;
+    margin-bottom: 5px;
+}
+/* 표의 성질을 나타내는 값 표를 이루는 선의 크기는 1px이며 선의 종류는 solid(직선) 선의 색깔은 블랙 */
+table, th, td {
+    border: 1px solid black;
+  }
+  /* 이미지의 크기를 150으로 설정하고 한라인에 왼쪽에만 위치를 치자하며 오른쪽에 10px 여백을 둠 */
+  img{
+      width: 150px;
+      float: left;
+    margin-right: 10px;
+  }
+  /* input태그의 라벨속성을 나타내는 css 배경색은 회색 배경 넒이는 100px 배경안에서 글자의 위치는 가운데로 설정 */
+  label{
+    background-color: gray;
+    text-align: center;
+    width: 100px;
+    /* 디스플레이 설정을 이렇게 해줘야 라벨의 넓이를 설정할 수 있음 */
+    display:inline-block;
+}
+/* 버튼을 나타내는 css 크기는 50px며 왼쪽에 1000px 여백을 둠  */
+button{
+    width: 50px;
+    margin-left: 1000px;
+}
