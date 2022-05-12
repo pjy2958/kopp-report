@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- document의 첫시작 -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 윈도우창에 보이는 이름입력 -->
+    <title>resume</title>
+    <!-- css 불러오기 -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<!-- document의 바디, 화면 출력 내용 -->
+<body>
+    <!-- 전체 가운데 정렬태그 -->
+    <center>
+    <!-- 웹페이지 입력태그, action: 데이터가 전송되는 url, method: 폼 전송방식, get으로 하면 주소창에 보임 -->
+     <form action="" method="get"> 
+
+        <!-- 웹페이지 영역 구분 태그 -->
+        <!--  span태그는 컨텐츠 자체에 배경적용, div태그는 줄바꿈이 되는 형태로 구성 -->
+        <div class="div">
+        <!-- 하나의 문단을 만들때 쓰는 태그 -->
+        <p>
+                <img src="./man.png" alt ="resumephoto" width="35%"><br>
+        </p>
+        <!-- 순서가 없는 리스트 생성 -->
+         <ul>
+            <!-- 각각의 리스트 지정 -->
+            <li>
+            <!-- 명시적인 label설정, 명시하면 id와 연결됨, 입력하는 칸 안눌르고 글자 눌러도 입력가능-->
+            <label for="name">1. Name:</label> 
+            <!-- autofocus 첫 입력으로 깜박거림/ placeholder 작성예시를 보여줌 -->
+	        <input id="name" name="name" type="text" required autofocus  placeholder="홍길동"/>
+            </li><br>
+
+            <li>
+	        <label for="phone">2. Phone:</label>  
+	        <input id="phone" name="phone" type="text" placeholder="010-0000-0000"/>
+            </li><br>
+
+            <li>
+	        <label for="email">3. Email:</label>  
+	        <input id="email" name="email" type="email"  placeholder="010-0000-0000"/> 
+	        </li><br>
+
+            <li>
+            <label for="address">4. Address:</label>  
+	        <input id="address" name="address" type="text" placeholder="서울시 땡땡구 땡땡동" />
+            </li><br>
+
+            <li>
+            <label for="Degree">5. Degree:</label> 
+            <input type="date">
+	        <input id="Degree" name="Degree" type="text" placeholder="최종학력입력" />
+            </li><br>
+
+            <li>
+            <label for="awards">6. Awards:</label> 
+            <input type="date"> 
+	        <input id="awards" name="awards" type="text" placeholder="수상내역입력" />
+            </li><br>
+	  
+            <!-- button 태그, 서버에서 주는 타입으로 설정 -->
+	        <button type="submit"> Submit </button>
+        </div>
+      	</form>
+        </ul>
+    </center>
+</body>
+</html>

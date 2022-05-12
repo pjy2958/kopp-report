@@ -1,0 +1,28 @@
+/* 리스트 컬러지정 */
+li{
+    color: palevioletred;
+}
+
+/* 버튼 색 바꾸기 */
+button:hover{
+    color: pink;
+    background: gray;
+}
+
+/* div의 클래스 설정 */
+.div{
+    /* 회색 콘텐츠 내에서의 간격 */
+    padding-top: 90px;
+    /* 전체윈도우 창에서의 간격 */
+    margin-top: 80px;
+    /* 영역의 크기설정 */
+    width:900px;
+    height:700px;
+    background-color: lightgray;
+}
+
+/* 리스트 속성 설정 */
+ul {
+    /* 표시가 안보이도록 설정 */
+    list-style: none;
+  }
