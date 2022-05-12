@@ -1,0 +1,147 @@
+<!DOCTYPE html> <!-- 웹 문서의 유형을 html로 지정 -->
+<html lang="en">
+<!-- head : 브라우저의 정보 입력 -->
+<head>
+    <!-- meta : 문자 인코딩 및 문서 키워드, 요약 정보 -->
+    <meta charset="UTF-8"> <!-- 언어 지정 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- title : 웹 페이지의 제목을 나타내는 태그 -->
+    <title>이력서</title>
+    <!-- style : CSS 정보를 정의할 때 사용하는 태그 -->
+    <style>
+        h1 {
+            /* 텍스트 중앙 정렬 */
+            text-align: center;
+        }
+
+        body {
+                width: 700px; /* 너비 */ 
+                margin: 0 auto; /* 요소의 네 방향 바깥 여백 영역 설정 */ 
+                padding: 0; /* 요소의 네 방향 안쪽 여백 영역 설정 */ 
+        }
+
+        table {
+            width: 250px; /* 너비 */ 
+            height: 265px; /* 높이 */ 
+            margin: 0 auto;
+            border: 1px solid; /* 요소의 테두리 설정 */
+        }
+
+        td,tr,th {
+            border: 1px solid; /* 요소의 테두리 설정 */
+            padding: 1px; /* 요소의 네 방향 안쪽 여백 영역 설정 */
+            text-align: center; /* 텍스트 중앙 정렬 */
+        }
+
+        img {
+            width: 400px; /* 너비 */  
+            float: left;    /* 특정 요소를 떠있게 하는 것 */  
+        }
+    </style>
+</head>
+<!-- body : 브라우저에 실제 표시되는 부분 -->
+<body>
+    <!-- section : 문서 구조 중 콘텐츠 영역 -->
+    <section>
+        <!-- header : 문서 구조 중 헤더 영역 -->
+        <header>
+            <!-- h1 ~ h6 : 문서에서 제목(headings)을 정의함 -->
+            <h1> ★ 펭수의 이력서 ☆</h1>
+            <!-- figure : 사진과 같은 독립적인 콘텐츠를 정의할 때 사용 -->
+            <figure>
+                <!-- img : 이미지 삽입, 파일 경로를 사용해 삽입한다 -->
+                <img src="./펭.jpg"/>
+            </figure>   
+        </header>
+    </section>
+    <section>
+        <!-- table : 표 만들기 -->
+        <table>
+                <!-- tr : 각 행 정의 -->
+                <tr>
+                    <!-- th : 각 열의 제목 정의 -->
+                    <!-- colspan : 열 합치기 -->
+                    <th colspan="20">인적사항</th>
+                </tr>
+                <tr>
+                    <!-- td : 하나의 테이블 셀 정의 -->
+                    <td>이름</td>
+                    <td>펭수</td>
+                </tr>
+                <tr>
+                    <td>나이</td>
+                    <td>10살</td>
+                </tr>
+                <tr>
+                    <td>연락처</td>
+                    <td>010-1234-5678</td>
+                </tr>
+                <tr>
+                    <td>주소</td>
+                    <td>광명시 철산동</td>
+                </tr>
+                <tr>
+                    <td>이메일</td>
+                    <td>pengsoo@ebs.co.kr</td>
+                </tr>
+                <tr>
+                    <td>학력</td>
+                    <td>남극유치원</td>
+                </tr>
+        </table>
+    </section>
+    <!-- contenteditable="true" : 편집 모드로 변경 -->
+    <section contenteditable="true">
+        <h2>보유기술</h2>
+        <!-- ul : unorderd list, 순서가 없는 list -->
+        <ul> 
+            <!-- ul 안에서 항목을 나열할 때 사용 -->
+            <li>Programming Language : Java, C, HTML, CSS, Javascript</li>
+            <li>Framework : Spring, Express, Boostrap, jQuery</li>
+            <li>Server : Tomcat, Oracle</li>
+            <li>Environment : Linux, Windows</li>
+        </ul>
+    </section>
+
+    <!-- hr : 수평 가로선 -->
+    <hr>
+    <section>
+    <h2>변경사항 작성란</h2>
+        <!-- form : 사용자로부터 입력을 받을 수 있는 HTML 입력 폼(form)을 정의할 때 사용 -->
+        <!-- action : form을 전송할 서버 경로 -->
+        <!-- method : 전송 방식 선택 -> get :  -->
+        <form action="" method="get"> 
+            <!-- input : form의 요소 중 하나, 사용자가 정보를 입력하는 부분을 만들 때 사용 -->
+            <!-- br : 줄 바꿈 태그 -->
+            <!-- 참고) required : 필수 입력 필드 지정 -->
+            <!-- type="text" : 텍스트 상자-->
+            <!-- label : 사용자 인터페이스 요소의 라벨을 정의함 -->
+            <!-- name :  <input> 요소의 이름을 명시 -->
+            <label for="phone">연락처</label>  
+            <input id="phone" name="phone" type="text"><br>  
+            
+            <!--  email :  이메일 주소를 입력할 수 있는 입력 필드를 정의 -->
+            <label for="email">이메일</label>  
+            <input id="email" name="email" type="email" placeholder="abcd@abcd.com" /><br>    
+            
+            <!-- &nbsp : 띄어쓰기 -->
+            <label for="address">주소&nbsp&nbsp</label>  
+            <input id="address" name="address" type="text"/><br>    
+            <br>
+            <!-- button : 페이지에 버튼을 넣고 form을 전송할 때 사용 -->
+            <!-- submit : form 제출 -->
+            <button type="submit"> 변경사항 제출하기 </button>
+            </form>
+        </p>  
+    </section>
+
+    <!-- hr : 수평 가로선 -->
+    <hr>
+    <!-- footer : 문서 구조 중 해당 문서의 푸터를 정의함 -->
+    <footer>
+        <!-- p : 단락 -->
+        <p>감사합니다</p>
+    </footer>
+</body>
+</html>

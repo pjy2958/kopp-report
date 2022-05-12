@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>이력서</title>
+</head>
+
+<body>
+    <!-- 이력서 제목을 나타내는 h1태그 -->
+    <h1>이력서</h1>
+    <div class="main">
+
+        <h3>1.인적사항</h3>
+        <!-- 인적사항을 기재하는 form 태그 -->
+        <form class="personal_Info_Main" action="">
+            <img src="cat.jpg" alt="">
+            <!-- 성명(한글)을 입력하는 칸 -->
+            <label class="personal_Info_label" for="ko_name">성명(한글)</label>
+            <!-- input칸에 홍길동이라는 값을 넣고 readonly 설정으로 수정할 수 없게 함 -->
+            <input class="personal_Info_input" type="text" value="홍길동" readonly>
+            
+            <!-- 성명(영어)을 입력하는 칸 -->
+            <label class="personal_Info_label" for="en_name">성명(영어)</label>
+            <!-- input칸에 hong-gildong 값을 넣고 readonly 설정으로 수정할 수 없게 함 -->
+            <input class="personal_Info_input" type="text" value="hong-gildong" readonly>
+            <br>
+            
+            <!-- 생년월일을 입력하는 칸 -->
+            <label class="personal_Info_label" for="brith">생년월일</label>
+            <!-- input칸에1997/04/12 값을 넣고 readonly 설정으로 수정할 수 없게 함 -->
+            <input class="personal_Info_input" type="text" value="1997/04/12" readonly>
+            
+            <!-- 성별을 입력하는 칸 -->
+            <label class="personal_Info_label" for="gender">성별</label>
+            <!-- input칸에 남자 값을 넣고 readonly 설정으로 수정할 수 없게 함 -->
+            <input class="personal_Info_input" type="text" value="남자" readonly>
+            <br>
+            
+            <!-- 병역사항을 입력하는 칸 -->
+            <label class="personal_Info_label" for="army">병역사항</label>
+            <!-- input칸에 미필 값을 넣고 readonly 설정으로 수정할 수 없게 함 -->
+            <input class="personal_Info_input" type="text" value="미필" readonly>
+            
+            <!-- 보훈대상여부를 입력하는 칸 -->
+            <label class="personal_Info_label" for="veteran">보훈대상여부</label>
+            <!-- input칸에 해당사항없음 값을 넣고 readonly 설정으로 수정할 수 없게 함 -->
+            <input class="personal_Info_input" type="text" value="해당사항없음" readonly>
+            <br>
+            
+            <!-- 현주소를 입력하는 칸 -->
+            <label class="personal_Info_label" for="address">현주소</label>
+            <!-- input칸에 서울특별시 00구 00동 값을 넣고 readonly 설정으로 수정할 수 없게 함 -->
+            <input class="address_input" type="text" value="서울특별시 OO구 OO동" readonly>
+            <br>
+            <!-- 연락처를 입력하는 칸 -->
+            <label class="personal_Info_label" for="phone">연락처</label>
+            <!-- input칸에 011111111 값을 넣고 readonly 설정으로 수정할 수 없게 함 -->
+            <input class="personal_Info_input" type="text" value="01111111111" readonly>
+            
+            <!-- 이메일을 입력하는 칸 -->
+            <label class="personal_Info_label" for="email">이메일</label>
+            <!-- input칸에 AAA@kopo.net 값을 넣고 readonly 설정으로 수정할 수 없게 함 -->
+            <input class="personal_Info_input" type="email" value="AAA@kopo.net" readonly>
+            
+        </form>
+        
+        
+        
+        <h3>2.학력사항</h3>
+        <!-- 학력사항을 기재하는 form 태그 -->
+        <form class="educational_History_Main" action="">
+            <!-- 기간을 입력하는 칸 -->
+            <label class="educational_History_label" for="ko_name">기간(년,월)</label>
+            <!-- input칸에 1111.04.12-2222.45.78 값을 넣고 readonly 설정으로 수정할 수 없게 함 -->
+            <input class="educational_History_input" type="text" value="1111.04.12-2222.45.78" readonly>
+            
+            <!-- 학교명을 입력하는 칸 -->
+            <label class="educational_History_label" for="ko_name">학교명(학위)</label>
+            <!-- input칸에 한국폴리텍대학교 값을 넣고 readonly 설정으로 수정할 수 없게 함 -->
+            <input class="educational_History_input" type="text" value="한국폴리텍대학교" readonly>
+            <br>
+            
+            <!-- 전공을 입력하는 칸 -->
+            <label class="educational_History_label" for="ko_name">전공학과</label>
+            <!-- input칸에 데이터분석과 값을 넣고 readonly 설정으로 수정할 수 없게 함 -->
+            <input class="educational_History_input" type="text" value="데이터분석과" readonly>
+            
+            <!-- 학점을 입력하는 칸 -->
+            <label class="educational_History_label" for="ko_name">학점/만점</label>
+            <!-- input칸에 3.5/4.5 값을 넣고 readonly 설정으로 수정할 수 없게 함 -->
+            <input class="educational_History_input" type="text" value="3.5/4.5" readonly>
+            <br>
+            
+            <!-- 소재지를 입력하는 칸 -->
+            <label class="educational_History_label" for="ko_name">소재지</label>
+            <!-- input칸에 경기도 광명시 OO동 값을 넣고 readonly 설정으로 수정할 수 없게 함 -->
+            <input class="educational_address_input" type="text" value="경기도 광명시 OO동" readonly>
+            
+        </form>
+        <h3>3.자격증 및 교육사항</h3>
+        <!-- 자격증 및 교육사항을 기재하는 table 태그(표) -->
+        <table>
+            <!-- tr태그는 하나의 행을 구성 -->
+            <tr>
+                <!-- th 태그는 행에서 하나의 칸을 담당함, rowspan = 3 은 자격면허라는 칸이 3개을 열과 병합됨  -->
+                <th rowspan="3">자격/면허</th>
+                <th>취득일자</th>
+                <th>자격 및 교육명</th>
+                <th>발급기관</th>
+                <th>점수/등급</th>
+            </tr>
+            <tr>
+                <td>2100.04.12</td>
+                <td>정보처리기사</td>
+                <td>한국기업</td>
+                <td>실기합격</td>
+            </tr>
+            <tr>
+                <td>2100.04.12</td>
+                <td>정보처리기사</td>
+                <td>한국기업</td>
+                <td>실기합격</td>
+            </tr>
+            
+        </table>
+        <h3>4.수상경력</h3>
+        <table>
+            <tr>
+                <th>일자</th>
+                <th>단체</th>
+                <th>내용</th>
+            </tr>
+            <tr>
+                <td>2100.04.12</td>
+                <td>폴리텍대학</td>
+                <td>우수학생</td>
+                
+            </tr>
+            <tr>
+                <td>2100.04.12</td>
+                <td>가나다기업</td>
+                <td>표창장</td>
+            </tr>
+            
+        </table>
+        <h3>5.경력사항</h3>
+        <!-- 회사명를 입력하는 칸 -->
+        <label class="educational_History_label" for="ko_name">회사명</label>
+        <!-- input칸에 경기도 광명시 OO동 값을 넣고 readonly 설정으로 수정할 수 없게 함 -->
+        <input class="educational_address_input" type="text" value="경기도 광명시 OO동" readonly>
+        <br>
+        <!-- 근무기간을 입력하는 칸 -->
+        <label class="educational_History_label" for="ko_name">근무기간</label>
+        <!-- input칸에 경기도 광명시 OO동 값을 넣고 readonly 설정으로 수정할 수 없게 함 -->
+        <input class="educational_address_input" type="text" value="경기도 광명시 OO동" readonly>
+        <br>
+        <!-- 근무부서을 입력하는 칸 -->
+        <label class="educational_History_label" for="ko_name">근무부서</label>
+        <!-- input칸에 경기도 광명시 OO동 값을 넣고 readonly 설정으로 수정할 수 없게 함 -->
+        <input class="educational_address_input" type="text" value="경기도 광명시 OO동" readonly>
+        <br>
+        <button type="submit">제출</button>
+    </div>
+</body>
+
+</html>

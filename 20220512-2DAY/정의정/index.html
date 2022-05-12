@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="homework1.css" media="screen">
+    <title>이력서</title>
+</head>
+
+<body>
+    <header>
+        <h1>이력서</h1>
+    </header>
+
+    <div class="figure">
+        <img src="./8951_12976_2952.jpg" width="20%">
+    </div>
+
+
+<section2>
+   <br> <h3>필수입력정보</h3>
+    
+<form action="" method="get">
+
+            <!-- 이름 입력 -->
+    <label for="name">성명 (한글): </label>
+    <input type="text" name="name" type="text" placeholder="김코포" required> <br>
+
+    <label for="name">성명 (영어): </label>
+    <input type="text" name="name" type="text" placeholder="Kim kopo" required> <br>
+
+    <!-- 휴대폰 번호 입력 -->
+    <label for="phone">연락처:</label>
+    <input type="phone" name="phone" type="text" placeholder="010-1234-1234" required> <br>
+    
+     <!-- 주소 입력 -->
+     <label for="address">주소:</label>
+     <input type="address" name="address" type="text" placeholder="경기도 광명시 코포구" required> <br>
+
+    <!-- 이메일 입력 -->
+    <label for="phone">이메일:</label>
+    <input type="email" name="email" type="email" placeholder="naver@gmail.com" required><br>
+
+    <button type="submit">SUBMIT</button><br>
+
+
+ <!-- <style>
+    form {
+        background-color: lightgrey;
+        padding: 10px; /* 배경속성 */
+    }
+    figure {
+        padding-right: 20px;
+    }
+  
+ </style> -->
+</form>
+
+</section2>
+
+
+
+
+<section>
+    <h3>학력사항</h3>
+
+    <table border="2" width ="1000" height="50" align = "center" >
+  
+    <tr align = "center" bgcolor="lightgrey">
+	<td>기간(년, 월)</td>
+	<td>학교 명</td>
+	<td>졸업여부</td>
+    </tr>   
+
+    <tr>
+        <td>
+            <input type="date" name="date" placeholder="2016.03~2021.02" required>
+        </td>
+        <td>
+            <input type="text" name="text" placeholder="서울대학교" required>
+        </td>
+        <td>
+            <input type="text" name="text" placeholder="졸업" required><br>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            <input type="date" name="date" placeholder="2022.03~" required>
+        </td>
+        <td>
+            <input type="text" name="text" placeholder="코포" required>
+        </td>
+        <td>
+            <input type="text" name="text" placeholder="재학중" required><br>
+        </td>
+    </tr>
+    </table>
+</section>
+
+<section>
+   <br> <h3>자격사항</h3>
+
+    <table border="2" width ="1000" height="50" align = "center" >
+  
+        <!--   <tr bgcolor="blue" align ="center">
+	<p><td colspan = "3" span style="color:white">오늘의 수입/지출</td></p>
+    </tr> -->
+  
+    <tr align = "center" bgcolor="lightgrey">
+	<td>취득일(년, 월)</td>
+	<td>자격사항</td>
+	<td>발행기관</td>
+    </tr>   
+
+    <tr>
+        <td>
+            <input type="date" name="date" placeholder="2012.12." required>
+        </td>
+        <td>
+            <input type="text" name="text" placeholder="정보처리기사" required>
+        </td>
+        <td>
+            <input type="text" name="text" placeholder="한국산업인력공단" required><br>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            <input type="date" name="date" placeholder="2022.05" required>
+        </td>
+        <td>
+            <input type="text" name="text" placeholder="SQLd" required>
+        </td>
+        <td>
+            <input type="text" name="text" placeholder="한국데이터" required><br>
+        </td>
+    </tr>
+    </table>
+</section>
+
+
+<footer>
+   <br> 감사합니다.
+</footer>
+
+</body>
+</html>
