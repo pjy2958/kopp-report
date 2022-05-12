@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>이력서</title>
+  <link rel="stylesheet" href="2DAY_assignment.css">
+</head>
+
+
+<body>
+
+
+  <table border="1" width="800">
+<!-- 이력서를 테이블 형식으로 만들기 위해 table 태그를 사용했고, 옵션으로 border은 테이블의 선의 굵기를 결정하고, width는 테이블의 전체 가로폭의 길이를 결정한다 -->
+    <tr>
+<!-- tr태그는 table row의 약자로 테이블의 가로줄을 생성하는 역할을 한다. tr태그의 옵션에 아무런 값도 입력하지 않으면 기본값으로 굵은 글씨체에 가운데 정렬된 글씨가 테이블에 입력된다 -->
+    <td rowspan="5" width="85" height="113">
+<!-- td태그는 table data의 약자로 tr 태그에 의해 생성된 테이블의 가로줄의 내부에 데이터가 포함될 수 있는 칸을 생성하는 역할을 하는 태그이다. tr 태그의 옵션에 아무것도 지정하지 않으면 기본값으로 보통 글씨체에 왼쪽 정렬된 글씨가 테이블에 입력된다. -->
+<!-- td태그의 rowspan옵션은 세로줄을 합치는 개수를 결정하는 태그이다. 이 경우 5로 지정했으므로 세로 방향으로 5개의 셀이 생성될 수 있음을 의미한다 -->
+    <img src="./kbk.png" alt="증명사진">
+    </td>
+    
+    <th colspan="9" height="50">
+      <font size="5">이력서</font>
+    </th>
+<!-- th태그는 table head의 약자로, 테이블의 제목을 생성하는 역할을 한다. 아무런 옵션을 설정하지 않으면 기본값으로 굵은 글시체에 중앙 정렬이 된다.-->
+<!-- th태그의 colspan 옵션은 해당 헤더 셀이 확장될 수 있는 열의 개수를 결정하는 옵션이다. -->
+  </tr>
+
+  <tr>
+    <th rowspan="3" width=""85 height="70" bgcolor="D5D5D5">
+      성명
+    </th>
+<!-- th태그의 rowspan 옵션은 해당 헤더 셀이 확장될 수 있는 행의 개수를 결정하는 옵션이다.-->
+  </tr>
+
+  <tr>
+    <th colspan="2" bgcolor="D5D5D5">
+      한글
+    </th>
+    <td width="90"></td>
+    <th bgcolor="D5D5D5">생 년 월 일</th>
+    <th colspan="2" width="80" bgcolor="D5D5D5">E-mail</th>
+  </tr>
+
+  <tr>
+    <th colspan="2" bgcolor="D5D5D5">한 문</th>
+    <td></td>
+    <td></td>
+    <td colspan="2"></td>
+  </tr>
+
+  <tr>
+    <th colspan="2" width="50" bgcolor="D5D5D5">연락처</th>
+    <td colspan="2"></td>
+    <th colspan="2" width="50" bgcolor="D5D5D5">긴급 연락처(핸드폰)</th>
+    <td colspan="2"></td>
+  </tr>
+
+  <tr>
+    <th bgcolor="D5D5D5">현 주 소</th>
+    <td colspan="8"></td>
+  </tr>
+</table>
+
+<!-- 전체 이력서를 크게 2개의 테이블로 나누어서 구조화 하기 위해 아래에 테이블 전체를 의미하는 table 태그를 하나 더 생성한다. 이러한 table 태그는 내부에 아무런 테이블 태그를 집어넣지 않는다면 외부적으로 아무런 효과도 나타낼 수 없는 태그이다.-->
+
+
+
+
+<table border="1">
+<tr>
+<th colspan="6" width="790" bgcolor="D5D5D5">학 력 사 항</th>
+<!-- table 태그의 내부에서 처음으로 등장한 th 태그의 colspan의 값은 결정적으로 테이블의 전체 가로방향에 들어갈 수 있는 셀의 개수를 결정한다. -->
+</tr>
+
+<tr>
+  <th bgcolor="D5D5D5">학위과정</th>
+  <th bgcolor="D5D5D5">기 간</th>
+  <th bgcolor="D5D5D5">학 교 명</th>
+  <th bgcolor="D5D5D5">전 공</th>
+  <th bgcolor="D5D5D5">수료</th>
+  <th bgcolor="D5D5D5">졸업</th>
+</tr>
+
+<tr>
+  <td></td>
+  <td align="center">~</td>
+<!-- td 태그의 align 옵션값은 td 태그에 의해 생성되는 셀의 내부의 글자의 정렬방향을 결정한다. 위 경우 '~' 문자를 가운데로 정렬하여 표현하게 된다.  -->
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr>
+<td></td>
+<td align="center">~</td>
+<td align="right">대학교</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+  <td></td>
+  <td align="center">~</td>
+  <td align="right">대학원</td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr>
+  <th colspan="6" bgcolor="D5D5D5">전 공 경 력 사 항</th>
+</tr>
+<!-- 위와 같이 테이블의 전체 제목을 생성할 수 있는 셀을 생성하는 th 태그는 항상 테이블 전체의 가로줄인 row가 생성이 돼야 그 안에 생성될 수 있는 성격을 가졌으므로, tr 태그 내부에 존재해야한다. 또한, 더 먼저 등장한 th 태그에 설정된 colspan값과 동일하게 6으로 설정하여 정렬이 올바르게 될 수 있도록 한다. -->
+
+<tr>
+  <th width="180" bgcolor="D5D5D5">근무년월</th>
+  <th width="200" bgcolor="D5D5D5">기 간</th>
+  <th width="100" bgcolor="D5D5D5">근 무 처</th>
+  <th width="100" bgcolor="D5D5D5">직 위</th>
+  <th colspan="2" width = "70" bgcolor="D5D5D5">자 격 증</th>
+</tr>
+
+<tr>
+<td align="center"> 년 &nbsp;&nbsp;&nbsp; 개월</td>
+<!-- &nbsp 는 html에서 띄어쓰기를 의미하는 공백문자이다. -->
+<td align="center"> ~ </td>
+<td></td>
+<td></td>
+<td colspan="2"></td>
+<!-- 바로 위의 td는 이전 tr 태그의 자격증으로 표현된 th태그와 동일선상에 정렬되는 태그이므로 정렬을 위해 colspan값도 동일하게 2로 설정한다 -->
+</tr>
+
+<tr>
+  <td align="center"> 년 &nbsp;&nbsp;&nbsp; 개월</td>
+  <td align="center"> ~ </td>
+  <td></td>
+  <td></td>
+  <td colspan="2"></td>
+</tr>
+
+<tr>
+  <td align="center"> 년 &nbsp;&nbsp;&nbsp; 개월</td>
+  <td align="center"> ~ </td>
+  <td></td>
+  <td></td>
+  <td colspan="2"></td>
+</tr>
+
+<tr>
+  <td align="center"> 년 &nbsp;&nbsp;&nbsp; 개월</td>
+  <td align="center"> ~ </td>
+  <td></td>
+  <td></td>
+  <td colspan="2"></td>
+</tr>
+
+<tr>
+  <td align="center"> 년 &nbsp;&nbsp;&nbsp; 개월</td>
+  <td align="center"> ~ </td>
+  <td></td>
+  <td></td>
+  <td colspan="2"></td>
+</tr>
+
+<tr>
+  <th bgcolor="D5D5D5">참 고 사 항</th>
+  <td colspan="5"></td>
+</tr>
+
+<tr>
+  <td colspan="6">
+    <p>위 기재 사항은 사실과 틀림이 없습니다.</p><br>
+    <!-- p 태그는 문단을 정의할 때 사용하는 태그로서 p 태그에 의해 생성된 문장의 위쪽과 아래쪽에 약간의 여백이 추가되게된다. -->
+    <p>20 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;년&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;월&nbsp;&nbsp;&nbsp;&nbsp;일</p><br>
+    <p>(인)&nbsp;&nbsp;&nbsp;</p>
+  </td>
+</tr>
+
+
+</table>
+
+
+
+
+    
+</body>
+
+
+
+</html>
